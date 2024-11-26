@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Passenger Counter App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="p-20 text-center space-y-8">
+    <h1 class="text-6xl font-bold">People entered:</h1>
+    <h2 class="text-9xl font-bold" id="count-el">0</h2>
+    <div class="flex flex-col gap-2 items-center justify-center">
+      <button onclick="increment()" id="increment-btn"
+        class="bg-red-800 w-80 py-4 border-4 border-black text-xl text-white font-bold rounded-md shadow-lg">
+        INCREMENT
+      </button>
+      <button onclick="save()" id="save-btn"
+        class="bg-green-800 w-80 py-4 border-4 border-black text-xl text-white font-bold rounded-md shadow-lg">
+        SAVE
+      </button>
+    </div>
+    <p id="save-el" class="text-2xl font-bold pr-24">Previous entries:</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
